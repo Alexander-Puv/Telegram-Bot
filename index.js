@@ -16,7 +16,7 @@ const start = () => {
         {command: '/start', description: 'Start dialogue'},
         {command: '/help', description: 'Help people to find the right way (or a command)'},
         {command: '/about', description: 'About coder'},
-        {command: '/game', description: 'Try to figure out what number I guessed'},//'WOW! This is a cool game with a lot of interesting conte... No. This is clicker.'
+        {command: '/game', description: 'Try to figure out what number I guessed'},
     ])
 
     bot.on('message', async msg => {
@@ -58,9 +58,9 @@ const start = () => {
             return startGame(chatId);
         }
         if(data == chats[chatId]) {
-            return await bot.sendMessage(chatId, `${rightMessages[Math.floor(Math.random()*rightMessages.length)]} I guessed number ${chats[chatId]}`, againOptions/* Math.floor(Math.random()*rightMessages.length) + `I guessed number ${chats[chatId]}` */);
+            return await bot.sendMessage(chatId, `${rightMessages[Math.floor(Math.random()*rightMessages.length)]} I guessed number ${chats[chatId]}`, againOptions);
         } else {
-            return await bot.sendMessage(chatId, `${falseMessages[Math.floor(Math.random()*falseMessages.length)]} I guessed number ${chats[chatId]}`, againOptions/* Math.floor(Math.random()*falseMessages.length) + `I guessed number ${chats[chatId]}` */);
+            return await bot.sendMessage(chatId, `${falseMessages[Math.floor(Math.random()*falseMessages.length)]} I guessed number ${chats[chatId]}`, againOptions);
         }
     })
 }
