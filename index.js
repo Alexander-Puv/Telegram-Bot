@@ -46,7 +46,7 @@ const start = () => {
         const rightMessages = [
             "You won... I'm so glad... Let's try again! ",
             "What a little m... You won! My congratulations! Than... maybe once more",
-            "Stupid moron! Outside my window... You won. You're so cool. Proud of yourself, yeah? Think you should try again. YOU MUST!"
+            "Stupid idiot! Outside my window... You won. You're so cool. Proud of yourself, yeah? Think you should try again. YOU MUST!"
         ];
         const falseMessages = [
             "Oh no! You lose! I thought you would win. You have to try again!",
